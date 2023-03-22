@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service
 class KafkaProducer(
     private var kafkaTemplate: KafkaTemplate<String, String?>?
 ) {
-    private val topicName: String = "test"
+    private val topicName: String = "sori"
     fun sendMessage(message: String?) {
         println(String.format("Produce : %s", message))
         kafkaTemplate!!.send(topicName!!, message)

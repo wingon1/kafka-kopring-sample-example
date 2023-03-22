@@ -7,7 +7,7 @@ import java.io.IOException
 
 @Service
 class KafkaConsumer {
-    @KafkaListener(topics = ["test"])
+    @KafkaListener(topics = ["sori"])
     @Throws(
         IOException::class
     )
